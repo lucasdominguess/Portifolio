@@ -1,0 +1,340 @@
+/*SEÇÃO INICIO*/
+:root { 
+    --var-rosa :#BE03FA ; 
+--var-rosa2:#9B2BFB ;
+--var-rosa3:#BC06FA;
+
+ 
+}
+/*Cabeçalho ->*/
+.inicio {
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    padding: -80px;
+}
+
+
+/*Barra Lateral -> */
+aside {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    display: flex;
+    overflow: hidden;
+
+}
+
+#barra-menu img {
+    margin: auto;
+}
+
+.icon-menu img {
+    width: 50px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-right: 15px;
+    display: none;
+}
+
+.icon-menu img:hover {
+   cursor: pointer;
+}
+
+#barra-menu {
+    background-color: #000000;
+    height: 100vh;
+    width: 0px;
+    transition: 0.4s all;
+}
+
+#barra-menu ul {
+    padding: 0;
+}
+
+#barra-menu ul li {
+    list-style: none;
+    padding: 5px 8px;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+#barra-menu ul li a {
+    color: #f4e5d0;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1rem;
+    width: 100%;
+    transition: 0.2s;
+}
+
+#barra-menu ul li a:hover {
+    color: #0e0e14;
+    background-color: #f4e5d0;
+    padding: 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+#barra-menu img {
+    display: block;
+    margin: auto;
+}
+
+/* <- Fim da Barra lateral*/
+
+#logo1 {
+    height: 80px;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: -100px;
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+nav h2 {
+    color: #000000;
+    font-size: 35px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+span {
+    color: #A124FB;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+nav ul {
+    border-radius: px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 25px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    transition: 0.2s;
+    padding: 5px 8px;
+    margin: -20px;
+}
+
+/* <-Fim cabeçalho*/
+
+/*Apresentação -> */
+nav ul li a:hover {
+    color: #f4e5d0;
+    background-color: #000000;
+    border-top: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.main {
+    position: absolute;
+    top: 40%;
+    left: 08%;
+}
+
+.main h4 {
+    color: #000000;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    margin: 0 0 -20px 0;
+}
+
+.main h1 {
+    color: #000000;
+    margin: 0;
+    font-size: 6rem;
+}
+
+.main h3 {
+    color: #000000;
+    font-size: 2rem;
+    margin: -15px 0 0px 0;
+}
+
+#link1 {
+    width: 100%;
+    padding: 9px;
+    border: solid 3px #000000;
+    border-radius: 15px;
+    color: #f4e5d0;
+    background-color: black ;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    box-sizing: border-box;
+    transition: .8s;
+    margin-top: 50px;
+}
+
+#link1:hover {
+    color:#A124FB;
+    border: solid 3px #000000;
+    background-color: #000000;
+    box-shadow: none;
+    transition: .8s;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+/* <- Fim da Apresentação*/
+
+
+
+/*==============================================================================================================
+
+
+MEDIAS = RESPONDIVIDADE - >*/
+
+@media screen and (max-width: 1500px) {
+
+    .main h1 {
+        font-size: 5.4rem
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: none;
+        font-family: 'Courier New', Courier, monospace;
+        overflow: visible;
+    }
+
+    #logo1 {
+        height: 60px;
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .main h1 {
+        font-size: 4.6rem;
+    }
+
+    .main h4 {
+        font-size: 1.5rem;
+    }
+
+    .main h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width:935px) {
+
+    .cabeçalho-link {
+        display: none;
+    }
+
+    .icon-menu img {
+        display: block;
+    }
+
+    #barra-menu {
+        height: 100vh;
+        z-index: 1;
+        width: 0px;
+    }
+
+    .main h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    .main h1 {
+        font-size: 4rem;
+    }
+
+    .inicio {
+        background-image: url(../ativos/back-1-portable.png);
+
+    }
+
+    #link1 {
+        width: 200px;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .main h1 {
+        font-size: 3.3rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+    .main h1 {
+        font-size: 2.8rem;
+        margin: 10px 0;
+    }
+
+    .main h4 {
+        font-size: 1.2rem;
+    }
+
+    .main h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    #logo1 {
+        height: 50px;
+        padding: 0px;
+    }
+
+    .main h1 {
+        font-size: 2.5rem;
+    }
+
+    #link1 {
+        width: 150px;
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .main h1 {
+        font-size: 1.8rem;
+    }
+
+    .main h3 {
+        font-size: 1.1rem;
+    }
+
+    .main h4 {
+        font-size: .8rem;
+    }
+}

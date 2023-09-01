@@ -1,0 +1,163 @@
+/*SEÇÃO HABILIDADES*/
+
+.habilidades {
+    background-color: #0e0e14;
+    width: 100%;
+    padding: 100px 0;
+}
+
+.titulo h2 {
+    color: white;
+    font-size: 3rem;
+    width: 100%;
+    margin: 0px auto 30px ;
+    text-align: center;
+}
+
+.container-habilidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 320px;
+}
+
+.card {
+    background-color: #0e0e14;
+    display: flex;
+    width: 700px;
+    margin: 15px;
+    align-items: center;
+    position: relative;
+    padding: 15px;
+    border: solid 4px #A124FB;
+    border-radius: 30px;
+    text-align: center;
+    transition: .8s;
+}
+
+.card img {
+    width: 120px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    border: double 10px #000000;
+}
+
+.descricao-habilidade {
+    margin: 0 15px;
+}
+
+.descricao-habilidade h2 {
+    color:#A124FB;
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+}
+
+.descricao-habilidade p {
+    color: white;
+    height: 115px;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+.descricao-habilidade h3 {
+    background-color: #A124FB;
+    border-radius: 25px;
+    color: #0e0e14;
+    margin: 20px;
+    font-size: 1.4rem;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    transition: .8s;
+}
+
+/*========================================================================================================
+
+MEDIAS = RESPONSIVIDADE*/
+
+@media screen and (max-width: 760px) {
+
+    .card {
+        display: block;
+        width: 70%;
+        margin: 0px;
+        border-radius: 0;
+        padding: 30px;
+    }
+
+    #card1 {
+        border-top: solid 1px #A124FB;
+        border-right: solid 1px #A124FB;
+        border-left: none;
+        border-bottom: none;
+    }
+
+    #card2 {
+        border-top: solid 1px #A124FB;
+        border-right: none;
+        border-left: solid 1px #A124FB;
+        border-bottom: none;
+    }
+
+    #card3 {
+        border-top: solid 1px #A124FB;
+        border-right: solid 1px #A124FB;
+        border-left: none;
+        border-bottom: none;
+    }
+
+    #card4 {
+        border-top: solid 1px #A124FB;
+        border-right: none;
+        border-left: solid 1px #A124FB;
+        border-bottom: none;
+    }
+
+    #card5 {
+        border-top: solid 1px #A124FB;
+        border-right: solid 1px #A124FB;
+        border-left: none;
+        border-bottom: solid 1px #A124FB;
+    }
+
+    .card:hover {
+        transform: none;
+
+    }
+
+    .card img {
+        width: 120px;
+        border-radius: 25px;
+        background-color: #ffffff;
+        border: double 10px #000000;
+    }
+
+    .descricao-habilidade p {
+        color: white;
+        height: 50%;
+        margin: 0;
+        font-size: 1.1rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .descricao-habilidade h2 {
+        font-size: 1.8rem
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    .titulo h2 {
+        font-size: 2rem;
+    }
+
+    .descricao-habilidade h2 {
+        font-size: 1.5rem
+    }
+}

@@ -1,0 +1,167 @@
+
+/*Modo Dark Sessao inicio*/
+.dark { 
+   color: white;
+   background-color: rgba(0, 0, 0, 0.957);
+   animation: light-to-dark-background 0.3s ease-in-out;
+}
+.dark .inicio { 
+    background-image:none
+}
+.dark  h1 { 
+    color: white;
+}
+.dark span { 
+    color: aqua;
+}
+.dark h3  {
+    color: white;
+}
+.dark h4 { 
+    color: white;
+}
+
+/*Modo Dark Barra Menu Lateral */
+.dark#barra-menu { 
+    background-color: white;
+    color: black;
+}
+.dark nav h2 { 
+    color white
+}
+.dark nav ul li a { 
+    color:white
+}
+.dark nav ul li a:hover { 
+    color: aqua;
+    background-color: rgba(0, 0, 0, 0.297);
+}
+
+/*Modo Dark link1 Linkedin */
+.dark #link1 { 
+    border: solid 1px aqua;
+    color: aqua;
+    
+}
+/*Modo Dark Sobre */
+.dark .sobre {
+    background-color: whitesmoke;
+}
+.dark .sobre h2 , 
+.dark .sobre p {
+    color: black;
+}
+.dark img {
+    border: solid 3px rgb(0, 0, 0);
+}
+
+/*Modo Dark link2 Whasapp */
+.dark #link2 {
+    color: aqua;
+
+}
+.dark #link2:hover { 
+    color: black;
+    background-color: aqua;
+    font-size: 1.4rem;
+}
+
+/* Modo dark Habilidades */
+.dark #card1 {
+    border-top: solid 1px aqua;
+    border-right: solid 1px aqua;
+
+}
+.dark #card2 {
+    border-top: solid 1px aqua;
+    border-left: solid 1px aqua;
+}
+.dark #card3 {
+    border-top: solid 1px aqua;
+    border-right: solid 1px aqua;
+}
+.dark #card4 {
+    border-top: solid 1px aqua;
+  
+    border-left: solid 1px aqua;
+}
+.dark #card5 {
+    border-top: solid 1px  aqua;
+    border-right: solid 1px aqua;
+    border-bottom: solid 1px aqua;
+}
+.dark #card6 { 
+    border-left: solid 1px aqua;
+    border-bottom: solid 1px aqua;
+}
+.dark .card img { 
+    border: double 10px aqua;
+}
+.dark .descricao-habilidade h2 ,
+.dark .descricao-habilidade span  {
+    color: aqua; 
+}
+
+/* Modo dark Projeto */ 
+
+.dark .projeto , .dark .titulo-projeto { 
+    color: aqua;
+}
+.dark .container-projetos button {
+    color: aqua;
+    border: solid 3px aqua;
+}
+.dark .container-projetos button:hover { 
+    background-color: aqua;
+    border: solid 3px aqua;
+    color: black;
+    font-weight: bold;
+}
+.dark .capa { 
+    border-top: solid 3px aqua;
+    border-bottom: solid 3px aqua;
+}
+/*Modo Dark link 3 Github  */
+.dark #link3 { 
+    border: solid 3px aqua;
+    color: aqua;
+    background-color: black;
+}
+.dark #logo1 { 
+    border: none;
+}
+
+/*Modo dark rodape */ 
+.dark #registro { 
+    color: aqua;
+}
+.dark .contatos { 
+    border-left: solid 2px aqua;
+}
+@media screen and (max-width: 950px ) {
+
+.dark .contatos {
+    display: flex;
+    border-top: solid 2px aqua;
+    border-left: none;
+}
+}
+
+
+@keyframes dark-to-light-background {
+    0% {
+        background-color:var(--color-dark-100);
+    }
+    100.0% {
+        background-color:var(--color-light-50);
+    }
+}
+
+@keyframes light-to-dark-background {
+    0% {
+        background-color:var(--color-light-50);
+    }
+    100.0% {
+        background-color:var(--color-dark-100); 
+    }
+}

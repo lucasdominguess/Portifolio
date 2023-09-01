@@ -1,0 +1,174 @@
+/*SEÇÃO PROJETOS*/
+
+.projetos {
+    background-color: #f6f7fbb2;
+    width: 100%;
+    padding: 100px 0;
+}
+
+.projetos h2 {
+    color: #0e0e14;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 30px;
+}
+
+.container-projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 320px;
+    flex-wrap: wrap;
+}
+
+.projeto {
+    background-color: #0e0e14;
+    width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: #A124FB;
+}
+
+.capa {
+    height: 180px;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    border-top: solid 3px #A124FB;
+    border-bottom: solid 3px #A124FB;
+}
+
+.capa img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    filter: grayscale(1);
+    transition: .8s;
+}
+
+.capa img:hover {
+    filter: grayscale(0);
+    transition: .8s;
+    cursor: pointer;
+}
+
+.titulo-projeto {
+    color: #A124FB;
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.descrição {
+    font-size: 1rem;
+    height: 120px;
+    margin: 10px 0;
+    color: white;
+}
+
+.container-projetos button { /* botao ver projeto */
+    color: #A124FB;
+    padding: 10px 20px;
+    background-color: #0e0e14;
+    border: solid 3px #A124FB;
+    border-radius: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: .8s;
+}
+
+.container-projetos button:hover {
+    color: #0e0e14;
+    background-color: #A124FB;
+    border: solid 3px #A124FB;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#link3 { /*botao GitHubB*/
+    display: block;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    width: 500px;
+    color: #0f0f15;
+    background-color: #f6f7fbb2;
+    border: solid 3px #0f0f15;
+    border-radius: 15px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding: 13px 20px;
+    margin: 50px auto 0;
+    transition: .8s;
+}
+
+#link3:hover {
+    color: #A124FB;
+    border: solid 3px #000000;
+    background-color: #000000;
+    box-shadow: none;
+    transition: .8s;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+
+/*========================================================================================================
+
+MEDIAS = RESPONSIVIDADE*/
+
+@media screen and (max-width: 796px){
+
+    #link3 {
+        width: 320px;
+        font-size: 1.1rem;
+    }
+
+    #link3:hover {
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width: 440px){
+
+    .projeto {
+        padding: 15px;
+    }
+
+    .projetos h2 {
+        font-size: 2rem;
+    }
+
+    .capa {
+        width: 100%;
+        height: auto;
+    }
+
+    .capa img {
+        filter: grayscale(0);
+    }
+
+    .capa img:hover {
+        cursor: default;
+    }
+
+    .descrição {
+        font-size: 1rem;
+        height: 50%;
+        margin: 10px 0;
+    }
+
+    #link3 {
+        width: 290px;
+        font-size: 1rem;
+    }
+
+    #link3:hover {
+        letter-spacing: 0px;
+    }
+}

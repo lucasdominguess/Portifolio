@@ -1,0 +1,104 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Sriracha & display=swap');
+/*acima importaçoes de fontes personalizada*/
+
+:root { 
+ --fonte1: Verdana , Tahoma ,sans-serif ;
+ --fonte2: 'Passion One', cursive;
+ --fonte3: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html , body { 
+    font-family: var(--fonte1);
+    min-height: 100vh;
+    background-color: darkgray;
+}
+/*configurações do cabeçalho */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 { 
+    padding-top: 50px ;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 3.5em;
+}
+header > p {
+    padding-bottom: 50px;
+}
+header a , footer a { 
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover , footer a:hover {
+    text-decoration: underline;
+}
+/*configurações da section */
+section { /*config para ganhar um espaço entre os textos . podendo ultilizar o efeito paralax*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+}
+section > p { 
+    padding-bottom: 2em;
+}
+
+/*configurações da class section.normal */
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+/*configurações da class section.imagem */
+section.imagem { 
+    background-color: rgba(0, 0, 0, 0.603);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.644);
+    background-attachment: fixed;
+}
+
+section.imagem >p { 
+    padding: 5px;
+    display: inline-block;
+    background-color: rgba(54, 51, 51, 0.534);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.712);
+}
+/*configurações da class section.imagem com id 01 e 02 */
+section#img01 { 
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 { 
+    background-image: url('imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+/*configurações do rodapé*/
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: springgreen;
+    
+
+}

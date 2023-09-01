@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Sriracha&display=swap');
+
+* { 
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
+   
+    
+}
+
+body { 
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg ,#1c74b8 ,#2551af,#2b24af);
+
+}
+.card { 
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 22px;
+    box-shadow: 0px 35px 80px rgba(0,0 green,0 blue,0.15);
+    transition: 0.5s;
+    
+}
+.card:hover { 
+    height: 400px;
+    
+}
+.card .img-box { 
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 0px;
+}
+.card:hover .img-box { 
+    top: -100px;
+    scale: 0.75;
+    transition: 0.5s;
+}
+.card .img-box img { 
+    width: 100%;
+    height: 100% ;
+    object-fit: cover;
+}
+
+.card .content { 
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0px 30px ;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+    
+   
+}
+.card:hover .content { 
+    top: 130px;
+    height: 250px;
+  
+    
+
+}
+.card .read-more {
+ background: linear-gradient(90DEG , rgba(0, 0, 255, 0.658), #7e22ce);
+ padding: 12px;
+ color:#fff; 
+ text-decoration: none;
+ border-radius: 10px;
+ 
+}
+.read-more:hover { 
+    background: linear-gradient(90DEG , #7e22ce,rgba(0, 0, 255, 0.658));
+    -webkit-text-stroke-width: 0.5px;
+    
+}
+.content p { 
+  -webkit-text-stroke-width: 0.5px;
+}
+.content h2{ 
+    -webkit-text-stroke-width: 0.5px;
+  }
+  

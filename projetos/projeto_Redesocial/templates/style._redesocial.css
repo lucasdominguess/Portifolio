@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/**/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*confi para esconder a barra de rolagem da pag*/
+::-webkit-scrollbar { 
+    width: 0px;
+    height: 0px;
+}
+
+html , body { 
+    height: 102vh; /* vh é a altura total do navegador */
+    width: 100.0vw; /*vw é a largura total do navegador */
+    background-color: rgba(0, 0, 0, 0.568);
+}
+body { 
+    background: url("../templates/imagens/fundo-madeira.jpg")
+    no-repeat top center ;
+    background-size: cover;
+  
+}
+main {
+    height: 100vh;
+    position: relative;
+}
+/*Config celular no centro da tela */
+section#celular { 
+    height: 627px; /*Conf tamanho*/
+    width: 311px;
+    background-color: aqua;
+    border-radius: 15px;
+
+   position: absolute ; /*config posicionamento na tela*/
+   top: 50%; 
+   left: 50%;
+   transform: translate(-50%, -50%); /*Importante para centralizar*/
+   /*selecionando a imagem de fundo*/
+   background: url("../templates/imagens/frame-iphone.png")no-repeat ;
+}
+/*config img/tela dentro do celular*/
+iframe#tela { 
+
+    position: relative;
+    top:  80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+}
+/*confi para posição dos icones*/
+section#redes-sociais {
+    text-align: right ;
+}
+/*config para imagens dentro dos icones*/
+section#redes-sociais img { 
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2 px 5 px rgba(0, 0, 0, 0.438);
+    box-sizing: border-box;
+}
+section#redes-sociais img:hover { 
+    border: 2px solid white;
+    transform: translate(-3px,3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.582);
+    transition: transform .0.5s;
+}

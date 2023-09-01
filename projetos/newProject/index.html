@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <section id="container">
+        <form  class="calculadora">
+            <div id="valor1">
+                <label for="valor_acordo" required>Valor do acordo</label>
+                <input type="text" id="valor_acordo">
+            </div>
+            <div id="valor2">
+                <label for="parcela" required>Valor Parcela </label>
+                <input type="number" id="parcela"required>
+            </div>
+            <div id="resultado1">Resultado
+                <span id="resultado">R$ 0,00</span>
+            </div>
+            <div class="botoes">
+               <button id="calcular">resultado</button>
+                <input id="limpar"
+                type="reset" value="Limpar">
+            </div>
+           
+        </form>
+
+    </section>
+<script src="script.js"> </script>
+</body>
+</html>
