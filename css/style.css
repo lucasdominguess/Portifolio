@@ -8,3 +8,10 @@ body {
 a {
     text-decoration: none;
 }
+
+.back_dark { 
+background-image: url(/assets/Backgroud/background-1939128_1280.webp);
+}
+.back_white { 
+    background-image: url(/assets/perfil/back_adesivo.jpg);
+}

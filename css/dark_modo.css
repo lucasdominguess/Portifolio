@@ -33,6 +33,10 @@
     background-color: white;
     color: black;
 }
+.dark #mode_icon2:hover{
+    background-color: transparent;
+    
+}
 .dark nav h2 { 
     color white
 }
@@ -74,6 +78,9 @@
 }
 
 /* Modo dark Habilidades */
+.dark .card {
+    border: solid 4px aqua;
+}
 .dark #card1 {
     border-top: solid 1px aqua;
     border-right: solid 1px aqua;
@@ -145,6 +152,10 @@
 .dark .contatos { 
     border-left: solid 2px aqua;
 }
+
+
+
+
 @media screen and (max-width: 950px ) {
 
 .dark .contatos {
