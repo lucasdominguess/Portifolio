@@ -6,8 +6,15 @@
    animation: light-to-dark-background 0.3s ease-in-out;
 }
 .dark .inicio { 
-    background-image:none
+    background-image:url(/assets/Backgroud/background-1939128_1280.webp)
 }
+.dark .sobre {
+    background-image: url(/assets/perfil/back_adesivo.jpg);
+}
+.dark .habilidades { 
+    background-image: url(/assets/Backgroud/background-1939128_1280.webp);
+}
+
 .dark  h1 { 
     color: white;
 }
