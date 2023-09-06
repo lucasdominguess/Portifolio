@@ -135,7 +135,7 @@ MEDIAS = RESPONSIVIDADE*/
        
             width: 200px;
             margin-top: 10px;
-            font-size: 0.8rem;
+            font-size: 1rem;
         
     }
 
@@ -168,7 +168,7 @@ MEDIAS = RESPONSIVIDADE*/
     }
 
     .descrição {
-        font-size: 1rem;
+        font-size: 0.8rem;
         height: 50%;
         margin: 10px 0;
     }
